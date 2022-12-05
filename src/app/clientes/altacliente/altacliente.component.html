@@ -1,0 +1,21 @@
+<br>
+<br>
+<h3 style="text-align: center;">Dar de alta un nuevo cliente</h3>
+<div class="row">
+  <div class="col">
+
+    <form (ngSubmit)="agregar()">
+      <label class="form-label">Nombre</label>
+      <input type="text" class="form-control" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+      <label class="form-label">Apellido</label>
+      <input type="text" class="form-control" placeholder="Apellido" name="apellido" [(ngModel)]="nuevo.apellido">
+      <label class="form-label">Correo</label>
+      <input type="text" class="form-control" placeholder="correo@ejemplo.com" name="correo" [(ngModel)]="nuevo.correo">
+      <label class="form-label">Telefono</label>
+      <input type="text" class="form-control" placeholder="12345" name="telefono" [(ngModel)]="nuevo.telefono">
+      <br>
+      <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,31 @@
+<button type="button" routerLink='/clientes' class="btn btn-primary">Home</button>
+<button type="button" routerLink='/clientes/altacliente' class="btn btn-secondary">Alta</button>
+<button type="button" routerLink='' class="btn btn-warning">Cerrar sesion</button>
+<div>
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Email</th>
+      <th>Teléfono</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{usuario.nombre}}</td>
+      <td>{{usuario.apellido}}</td>
+      <td>{{usuario.correo}}</td>
+      <td>{{usuario.telefono}}</td>
+      <td>
+        <button [routerLink]= "['/clientes/editarcliente/',usuario.id]" class="btn-sm btn-rounded">Editar</button>
+        <button (click)="borrarUsuario(usuario.id)" class=" btn-sm btn-rounded">Borrar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<router-outlet></router-outlet>
+

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+
+  height: 100%;
+  background-image: url("https://th.bing.com/th/id/R.b0f62c6f6fa8b09233ecafb2fbfa4f30?rik=YkRooIXL9mQaPA&riu=http%3a%2f%2fk33.kn3.net%2ftaringa%2f8%2fA%2f8%2f9%2fC%2f9%2fcoreblue%2fE52.jpg&ehk=neGfQD32sD7owmaDGLNEN0d%2fEIyMO1dP7o4gFtURvEw%3d&risl=&pid=ImgRaw&r=0");
+  color: white;
+  font-weight: bold;
+
+}
